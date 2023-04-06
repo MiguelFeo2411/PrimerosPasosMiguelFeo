@@ -21,13 +21,14 @@ const CourseItem = () => {
     }
   ]);
 
+  const [nuevoCurso, setNuevoCurso] = useState("");
+  const [nuevoId, setNuevoID] = useState("");
   const agregarCurso = (event) => {
     event.preventDefault();
     if (!nuevoCurso.trim() && !nuevoId.trim() ) {
       return;
     }
-    const [nuevoCurso, setNuevoCurso] = useState("");
-    const [nuevoId, setNuevoID] = useState("");
+  
     const curso = {  
       id: nuevoId,
       nombre: nuevoCurso };
