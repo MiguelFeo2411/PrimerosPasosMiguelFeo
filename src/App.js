@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const CourseItem = () => {
+  const [cursos, setCursos] = useState([
+    {
+      id:5100,
+      nombre: "Arte y geometria"
+    },
+    {
+      id:5101,
+      nombre: 'Calculo Vectorial'
+    },
+    {
+      id:1470,
+      nombre: 'Introduccion a React'
+    },
+    {
+      id:3745,
+      nombre: 'Pesebres de plastilina'
+    }
+  ]);
 }
-
-export default App;
